@@ -5,10 +5,10 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductService } from './product.service';
-import { ListProductsComponent } from './list-products/list-products.component';
-import { AddProductComponent } from './add-product/add-product.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
+import { ProductService } from '../../FoodParkApp/src/app/services/products.service';
+import { ListProductsComponent } from './components/products/list-products/list-products.component';
+import { AddProductComponent } from './components/products/add-product/add-product.component';
+import { EditProductComponent } from './components/products/edit-product/edit-product.component';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from "@angular/forms";
-import { ProductService } from '../product.service';
+import { ProductService } from '../../../../../FoodParkApp/src/app/services/products.service';
 import { first } from "rxjs/operators";
 import { Router } from "@angular/router";
 

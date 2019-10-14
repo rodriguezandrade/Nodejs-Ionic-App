@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from "@angular/forms";
-import { ProductService } from '../product.service';
+import { ProductService } from '../../../../../FoodParkApp/src/app/services/products.service';
 import { first } from "rxjs/operators";
 import { Router } from "@angular/router";
-import { ProductModel } from '../ProductModel';
+import { Product } from '../../../models/Product';
 
 @Component({
   selector: 'app-edit-product',
@@ -12,7 +12,7 @@ import { ProductModel } from '../ProductModel';
 })
 export class EditProductComponent implements OnInit {
 
-  product: ProductModel;
+  product: Product;
   editForm: FormGroup;
   submitted = false;
 
